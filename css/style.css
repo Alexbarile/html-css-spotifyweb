@@ -2,4 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif; */
+}
+
+
+
+/* TOPBAR */
+
+
+
+.container-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 80px);
+    height: 70px;
+    background-color: rgb(144, 204, 40);
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+   
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.end{
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.center{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.col{
+    text-align: center;
+    width: 100%;
+}
+
+.col-25{
+    width: 25%;
+    text-align: center;
+}
+
+.col-50{
+    width: 50%;
+    text-align: center;
+}
+
+/* SIDEBAR */
+
+
+.container-aside{
+    width: 80px;
+    height: calc(100vh - 100px);
+    background-color: rgb(116, 116, 255);
+    position: relative;
+}
+
+
+/* MAIN */
+
+.container-main{
+    width: calc(100vw - 80px);
+    height: calc(100vh - 70px - 100px);
+    background-color: red;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    overflow-y: auto;
+
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: green;
 }
