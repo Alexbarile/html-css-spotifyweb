@@ -18,7 +18,8 @@
     right: 0;
     width: calc(100vw - 80px);
     height: 70px;
-    background-color: rgb(144, 204, 40);
+    background-color: rgb(27, 27, 27);
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -71,6 +72,25 @@
 .col-50{
     width: 50%;
     text-align: center;
+}
+
+.button-black{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-right: 15px;
+    padding: 12px 30px 12px 30px;
+    transition: all;
+}
+
+.button-black:hover{
+    scale: 1.1;
+
+}
+
+.button-black a{
+    color: white;
+    text-decoration: none;
 }
 
 /* SIDEBAR */
