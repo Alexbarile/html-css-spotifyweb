@@ -23,7 +23,7 @@ font-family: 'Sawarabi Gothic', sans-serif; */
     display: flex;
 }
 
-.col, .col-25{
+.col{
     text-align: center;
 }
 
@@ -55,34 +55,109 @@ font-family: 'Sawarabi Gothic', sans-serif; */
     height: 100%;
 }
 
+.padding-10{
+    padding: 10px;
+}
+
+.padding-5{
+    padding: 5px;
+}
+
+.small-invisible{
+    display: none;
+}
+
 /* SIDEBAR */
 
 aside{
     width: 50px;
     height: 100%;
-    background-color: red;
+    background-color: black;
     display: flex;
 }
 
 .col-aside-up, .col-aside-down{
-    width: 80%;
     font-family: 'Montserrat', sans-serif;
+    color: white;
+
 }
+
+/* COL ASIDE UP */
 
 .spotify img{
     width: 100%;
-    display: none;
-    
 }
 
 .logo img{
     width: 100%;
+    display: none;
 }
 
-.home{
-    width: 50%;
-    display: inline-block;
+.text{
+    font-size: 12px;
 }
+
+.gray{
+    color: gray;
+}
+
+.home img, .search img, .library img{
+    width: 20%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.home:hover{
+    border-left: 3px solid yellow;
+}
+
+.search img, .library img{
+    filter: invert(30%);
+}
+
+.col-aside-up h2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.col-aside-up ul{
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+#text-main{
+    font-size: 13px;
+} 
+
+.col-aside-up li{
+    padding: 5px;
+}
+
+.fa-plus{
+    background-color: gray;
+    color: black;
+}
+
+
+
+/* COL ASIDE DOWN */
+
+
+.hr{
+    width: 80%;
+    text-align: center;
+    border: 0.5px solid gray;
+    margin-left: 10px;
+}
+
+.fa-user{
+    background-color: gray;
+    color: white;
+    border-radius: 100%;
+    padding: 4px;
+    
+}
+
 
 /* TOPBAR E MAIN */
 
@@ -163,11 +238,19 @@ li{
 /* FOOTER */
 
 footer{
-    background-color: rgba(68, 144, 74, 0.625);
+    background-color: green;
     height: 100px;
     width: 100vw;
 }
 
+.sinister{
+    display: flex;
+    align-items: center;
+}
+.sinister img{
+    width: 15%;
+    
+}
 
 
 
@@ -175,11 +258,22 @@ footer{
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px){
+    .small-invisible{
+        display: inline;
+    }
     aside{
-        width: 100px
+        width: 150px
     }
     
     .contents, header{
-        width: calc(100vw - 100px);
+        width: calc(100vw - 150px);
     }
+    
+   
+}
+
+@media screen and (min-width: 562px) {
+
+    
+    
 }
