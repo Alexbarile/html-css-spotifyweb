@@ -238,9 +238,15 @@ li{
 /* FOOTER */
 
 footer{
-    background-color: green;
+    background-color: rgb(43, 35, 35);
     height: 100px;
     width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-25{
+    display: flex;
+    width: 20%; 
 }
 
 .sinister{
@@ -248,9 +254,28 @@ footer{
     align-items: center;
 }
 .sinister img{
-    width: 15%;
-    
+    width: 35%;
+    margin-right: 5px;
 }
+
+.sinister h3{
+    color: white;
+    font-size: 13px;
+}
+
+.sinister h4{
+    color: gray;
+    font-size: 11px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
 
 
 
