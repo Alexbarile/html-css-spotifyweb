@@ -12,30 +12,19 @@
     
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* SIDEBAR */
-
-aside{
-    width: 50px;
-    height: 100%;
-    background-color: red;
-    display: flex;
-}
-
-
+/* UTLITY CLASS */
 
 .row{
     display: flex;
 }
 
-.col{
+.col, .col-25{
     text-align: center;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 .align{
     align-items: center;
@@ -57,27 +46,31 @@ aside{
     justify-content: center;
 }
 
-.ul-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
+.height{
+    height: 100%;
 }
 
-li{
-    padding: 10px;
+/* SIDEBAR */
+
+aside{
+    width: 50px;
+    height: 100%;
+    background-color: red;
+    display: flex;
 }
 
 .col-aside-up, .col-aside-down{
     width: 80%;
 }
 
-/* HEADER */
+/* TOPBAR E MAIN */
 
 .contents{
     width: calc(100vw - 50px);
     height: 100%;
 }
+
+/* TOPBAR */
 
 header{
     background-color: rgba(0,0,0,0.5);
@@ -111,7 +104,6 @@ header{
     text-decoration: none;
 }
 
-
 /* MAIN */
 
 .main-content{
@@ -122,6 +114,30 @@ header{
     overflow-y: auto;
 }
 
+
+
+.ul-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+li{
+    padding: 10px;
+}
+
+.col-main{
+    width: 45%;
+    margin: 2%;
+    height: 50px;
+    background-color: yellow;
+    border: 1px solid black;
+    
+}
+
+
 /* FOOTER */
 
 footer{
@@ -130,9 +146,8 @@ footer{
     width: 100vw;
 }
 
-.col-25{
-    text-align: center;
-}
+
+
 
 
 /* RESPONSIVE */
@@ -142,7 +157,7 @@ footer{
         width: 100px
     }
     
-    .contents{
+    .contents, header{
         width: calc(100vw - 100px);
     }
 }
