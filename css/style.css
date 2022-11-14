@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* FONT */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Sawarabi Gothic', sans-serif; */
+
 
 .wrapper{
     width: 100vw;
@@ -61,6 +66,22 @@ aside{
 
 .col-aside-up, .col-aside-down{
     width: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.spotify img{
+    width: 100%;
+    display: none;
+    
+}
+
+.logo img{
+    width: 100%;
+}
+
+.home{
+    width: 50%;
+    display: inline-block;
 }
 
 /* TOPBAR E MAIN */
@@ -92,6 +113,7 @@ header{
     margin-right: 15px;
     padding: 12px 30px 12px 30px;
     transition: all;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .button-black:hover{
