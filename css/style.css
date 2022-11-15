@@ -54,6 +54,10 @@ font-family: 'Sawarabi Gothic', sans-serif; */
     height: 100%;
 }
 
+.padding-20{
+    padding: 20px;
+}
+
 .padding-10{
     padding: 10px;
 }
@@ -201,12 +205,16 @@ header{
 .main-content{
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: rgba(24, 25, 34, 1);
     padding: 80px 15px 15px 15px;
     overflow-y: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
+.col-first{
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 .ul-main{
     display: flex;
@@ -220,14 +228,48 @@ li{
     padding: 10px;
 }
 
-.col-main{
-    width: 45%;
-    margin: 2%;
-    height: 50px;
-    background-color: yellow;
-    border: 1px solid black;
-    
+.ul-main a{
+    text-decoration: none;
+    color: gray;
 }
+
+.main-content h2{
+    color: white;
+    font-size: 25px;
+}
+
+
+.col-main{
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+}
+
+.song img{
+    width: 95%; 
+}
+
+.col-main h3{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.col-main p, .main-content p{
+    color: gray;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.song-circle img{
+    border-radius: 50%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover
+}
+
+
+
 
 
 /* FOOTER */
