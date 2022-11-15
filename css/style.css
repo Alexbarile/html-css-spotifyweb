@@ -312,6 +312,7 @@ footer{
 .time-min, .time-max{
     font-size: 10px;
     color: white;
+    margin: 10px;
 }
 
 .progress-bar{
@@ -352,7 +353,51 @@ footer{
 
 /* footer dx  */
 
+.list-button ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 15px;
+    color: white;
+}
 
+.progress-bar-dx{
+    width: 70px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: gray;
+    cursor: pointer;
+    text-align: center;
+}
+
+.played-time-dx{
+    width: 20px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+   
+}
+
+.progress-cursor{
+    display: none;
+}
+
+.progress-bar-dx:hover .progress-cursor{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%)
+}
+
+.progress-bar-dx:hover .played-time-dx{
+    background-color: greenyellow;
+}
 
 /* RESPONSIVE */
 
