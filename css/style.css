@@ -268,10 +268,6 @@ li{
     object-fit: cover
 }
 
-
-
-
-
 /* FOOTER */
 
 footer{
@@ -286,7 +282,7 @@ footer{
 
 .col-25{
     display: flex;
-    width: 25%; 
+    width: 20%; 
 }
 
 .col-50{
@@ -390,10 +386,15 @@ footer{
 
 /* footer dx  */
 
+.list-button{
+    width: 100%;
+}
+
 .list-button ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
     font-size: 15px;
     color: white;
 }
@@ -449,8 +450,27 @@ footer{
     .contents, header{
         width: calc(100vw - 150px);
     }
+
+    .list-button{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-main{
+        width: calc(100% / 4);
+    }
     
-   
+    .list-button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-main{
+        width: calc(100% / 6);
+    }
+    
 }
 
 @media screen and (min-width: 562px) {
