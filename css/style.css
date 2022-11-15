@@ -242,6 +242,11 @@ li{
     width: 100%;
 }
 
+.song-circle{
+    position: relative;
+    width: 95%;
+}
+
 .song img{
     width: 95%; 
 }
@@ -259,15 +264,27 @@ li{
     background-color: rgba(0, 0, 0, 0.461);
 }
 
-.overlay i{
+.overlay-circle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.461);
+}
+
+.overlay i, .overlay-circle i{
     color: white;
     font-size: 80px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .col-main h3{
@@ -513,11 +530,11 @@ footer{
     border-bottom: 2px solid greenyellow;
 }
 
-.song:hover .overlay {
+.song:hover .overlay, .song-circle:hover .overlay-circle{
     opacity: 1;
   }
 
-.button-black:hover, .fa-circle-play:hover{
+.button-black:hover, .play:hover{
     scale: 1.1;
 }
 
