@@ -526,7 +526,7 @@ footer{
     color: white;
 }
 
-.ul-main li:first-child:hover{
+.ul-main li:hover{
     border-bottom: 2px solid greenyellow;
 }
 
@@ -576,5 +576,10 @@ footer{
 
 .progress-bar-dx:hover .played-time-dx{
     background-color: greenyellow;
+}
+
+h4:hover{
+    color: white;
+    text-decoration: underline;
 }
 
