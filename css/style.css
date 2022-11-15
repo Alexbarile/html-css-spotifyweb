@@ -14,7 +14,6 @@ font-family: 'Sawarabi Gothic', sans-serif; */
     width: 100vw;
     height: calc(100vh - 100px);
     display: flex;
-    
 }
 
 /* UTLITY CLASS */
@@ -79,7 +78,6 @@ aside{
 .col-aside-up, .col-aside-down{
     font-family: 'Montserrat', sans-serif;
     color: white;
-
 }
 
 /* COL ASIDE UP */
@@ -115,6 +113,11 @@ aside{
     filter: invert(30%);
 }
 
+.playlist{
+    overflow-y: hidden;
+    height: 100%;
+}
+
 .col-aside-up h2{
     font-size: 15px;
     margin-top: 10px;
@@ -138,10 +141,7 @@ aside{
     color: black;
 }
 
-
-
 /* COL ASIDE DOWN */
-
 
 .hr{
     width: 80%;
@@ -155,9 +155,7 @@ aside{
     color: white;
     border-radius: 100%;
     padding: 4px;
-    
 }
-
 
 /* TOPBAR E MAIN */
 
@@ -177,9 +175,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
 }
-
 
 .button-black{
     background-color: black;
@@ -193,7 +189,6 @@ header{
 
 .button-black:hover{
     scale: 1.1;
-
 }
 
 .button-black a{
