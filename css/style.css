@@ -110,10 +110,6 @@ aside{
     vertical-align: middle;
 }
 
-.home:hover{
-    border-left: 3px solid yellow;
-}
-
 .search img, .library img{
     filter: invert(30%);
 }
@@ -192,10 +188,6 @@ header{
     font-family: 'Montserrat', sans-serif;
 }
 
-.button-black:hover{
-    scale: 1.1;
-}
-
 .button-black a{
     color: white;
     text-decoration: none;
@@ -239,15 +231,43 @@ li{
     font-size: 25px;
 }
 
-
 .col-main{
     text-align: center;
     width: 50%;
     padding: 5px;
 }
 
+.song{
+    position: relative;
+    width: 100%;
+}
+
 .song img{
     width: 95%; 
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.461);
+}
+
+.overlay i{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .col-main h3{
@@ -301,6 +321,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+
 .sinister img{
     width: 30%;
 }
@@ -333,7 +354,7 @@ footer{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
 }
 
@@ -370,22 +391,6 @@ footer{
     display: none;
 }
 
-.progress-bar:hover .progress-cursor{
-    display: block;
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    top: 50%;
-    right: -10px;
-    transform: translateY(-50%)
-}
-
-.progress-bar:hover .played-time{
-    background-color: greenyellow;
-}
-
 /* footer dx  */
 
 .list-button{
@@ -416,27 +421,10 @@ footer{
     border-radius: 20px;
     background-color: white;
     position: relative;
-   
 }
 
 .progress-cursor{
     display: none;
-}
-
-.progress-bar-dx:hover .progress-cursor{
-    display: block;
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    top: 50%;
-    right: -10px;
-    transform: translateY(-50%)
-}
-
-.progress-bar-dx:hover .played-time-dx{
-    background-color: greenyellow;
 }
 
 /* RESPONSIVE */
@@ -508,6 +496,68 @@ footer{
 
 @media screen and (min-width: 562px) {
 
-    
-    
+
 }
+
+/* HOVER */
+
+.text:hover{
+    color: white;
+}
+
+.ul-main a:hover{
+    color: white;
+}
+
+.ul-main li:first-child:hover{
+    border-bottom: 2px solid greenyellow;
+}
+
+.song:hover .overlay {
+    opacity: 1;
+  }
+
+.button-black:hover, .fa-circle-play:hover{
+    scale: 1.1;
+}
+
+.home:hover{
+    border-left: 3px solid yellow;
+}
+
+.icon i:hover{
+    color: white;
+}
+
+.progress-bar:hover .progress-cursor{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%)
+}
+
+.progress-bar:hover .played-time{
+    background-color: greenyellow;
+}
+
+.progress-bar-dx:hover .progress-cursor{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%)
+}
+
+.progress-bar-dx:hover .played-time-dx{
+    background-color: greenyellow;
+}
+
