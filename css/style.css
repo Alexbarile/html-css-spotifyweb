@@ -82,12 +82,13 @@ aside{
 .col-aside-up, .col-aside-down{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    width: 150px;
 }
 
 /* COL ASIDE UP */
 
 .spotify img{
-    width: 100%;
+    width: 130px;
 }
 
 .logo img{
@@ -340,6 +341,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .time-min, .time-max{
@@ -444,11 +446,11 @@ footer{
         display: inline;
     }
     aside{
-        width: 150px
+        width: 250px
     }
     
     .contents, header{
-        width: calc(100vw - 150px);
+        width: calc(100vw - 250px);
     }
 
     .list-button{
@@ -457,6 +459,14 @@ footer{
 }
 
 @media screen and (min-width: 992px) {
+    aside{
+        width: 200px
+    }
+    
+    .contents, header{
+        width: calc(100vw - 200px);
+    }
+
     .col-main{
         width: calc(100% / 4);
     }
@@ -464,13 +474,36 @@ footer{
     .list-button{
         width: 100%;
     }
+
+    .icon{
+        flex-direction: row;
+    }
+
+    .icon i{
+        padding: 5px;
+    }
+
+    .player-bar, .progress-bar{
+        width: 130%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    aside{
+        width: 150px
+    }
+    
+    .contents, header{
+        width: calc(100vw - 150px);
+    }
+
     .col-main{
         width: calc(100% / 6);
     }
     
+    .player-bar, .progress-bar{
+        width: 160%;
+    }
 }
 
 @media screen and (min-width: 562px) {
