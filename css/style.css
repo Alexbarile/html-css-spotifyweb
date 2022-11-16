@@ -92,8 +92,11 @@ aside{
 }
 
 .logo img{
-    width: 100%;
+    width: 20%;
+    display: inline;
+    vertical-align: middle;
     display: none;
+    
 }
 
 .text{
@@ -224,6 +227,18 @@ li{
 .ul-main a{
     text-decoration: none;
     color: gray;
+}
+
+.hr-yellow{
+    text-align: -webkit-center;
+}
+
+.line-yellow{
+    width: 50%;
+    height: 3px;
+    border: none;
+    background-color: yellow;
+    display: none;
 }
 
 .main-content h2{
@@ -446,16 +461,52 @@ footer{
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 562px) {
+    .logo img{
+        display: block;
+    }
+
+    .spotify, .playlist, .text, .hr{
+        display: none;
+    }
+
+    .player-bar, .progress-bar{
+        width: 100%;
+    }
+
+    .col-25, .col-50{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 563px) and (max-width:767px){
+    .logo img{
+        display: block;
+    }
+
+    .spotify, .playlist, .text, .hr{
+        display: none;
+    }
+
+    .player-bar, .progress-bar{
+        width: 100%;
+    }
+
+    .col-25, .col-50{
+        width: 60%;
+    }
+}
+
 @media screen and (min-width: 768px){
     .small-invisible{
         display: inline;
     }
     aside{
-        width: 250px
+        width: 200px
     }
     
     .contents, header{
-        width: calc(100vw - 250px);
+        width: calc(100vw - 200px);
     }
 
     .list-button{
@@ -511,10 +562,6 @@ footer{
     }
 }
 
-@media screen and (min-width: 562px) {
-
-
-}
 
 /* HOVER */
 
@@ -524,6 +571,10 @@ footer{
 
 .ul-main a:hover{
     color: white;
+}
+
+li .line-yellow:hover{
+    display: block;
 }
 
 .ul-main li:hover{
@@ -539,7 +590,7 @@ footer{
 }
 
 .home:hover{
-    border-left: 3px solid yellow;
+    border-left: 1px solid greenyellow;
 }
 
 .icon i:hover{
